@@ -1,0 +1,30 @@
+.classic-genre-library {
+    background: whitesmoke;
+    padding: 30px;
+    text-align: center;
+}
+
+.classic-genre-library ul {
+    width: 400px;
+    padding: 30px;
+    margin-right: auto;
+    margin-left: auto;
+}
+.classic-author-library{
+    margin-right: auto;
+    margin-left: auto;
+    background: whitesmoke;
+    padding: 30px;
+    text-align: center;
+    width: 900px;
+    height: 1000px;
+}
+nav{
+    font-weight: bolder;
+    font-size: 2em;
+    text-align: center;
+    /*display: flex;*/
+}
+body{
+    background: rgba(149,176,186,0.59);
+}

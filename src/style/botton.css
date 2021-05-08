@@ -1,0 +1,20 @@
+.classic-button-library{
+    cursor: pointer;
+    color:rgba(8,8,16,0.91);
+    padding: 10px 20px;
+    width:auto;
+    text-decoration:none;
+    text-align:center;
+    margin:20px auto;
+    display: block;
+    background-image: linear-gradient(to left,transparent,transparent 50%,#00c6ff 50%, rgba(80, 125, 167, 0.75));
+    background-position: 100% 0;
+    background-size: 200% 100%;
+    transition: all .25s ease-in;
+    font: 400 18px tahoma;
+    border: 1px solid #00264c;
+}
+.classic-button-library:hover {
+    background-position: 0 0;
+    color:#fff;
+}
