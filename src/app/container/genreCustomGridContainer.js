@@ -13,7 +13,7 @@ export const GenreCustomGridContainer = connect(state => {
             getAllGenre().then(genres => {
                 dispatch(actionSetGenres(genres));
             }).catch(e => {
-                dispatch(actionSetGenres(testArrGenre))
+
             });
         }, editHandler(id) {
             getGenreById(id).then(genre => {
@@ -31,13 +31,3 @@ export const GenreCustomGridContainer = connect(state => {
             dispatch(actionCreateNewGenre());
         }
     }))(CustomGrid);
-
-let testArrGenre = [{
-    genre: "Классика",
-    id: 1
-},
-    {
-        genre: "Зук",
-        middleName: "Николаевич",
-        id: 2
-    }];

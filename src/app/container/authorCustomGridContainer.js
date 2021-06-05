@@ -12,7 +12,7 @@ export const AuthorCustomGridContainer = connect(state => {
             getAllAuthor().then(authors => {
                 dispatch(actionSetAuthors(authors))
             }).catch(e => {
-                dispatch(actionSetAuthors(testArrAuth))
+
             });
         }, editHandler(id) {
             getAuthorById(id).then(author => {
@@ -30,17 +30,3 @@ export const AuthorCustomGridContainer = connect(state => {
             dispatch(actionCreateNewAuthor());
         }
     }))(CustomGrid);
-
-//**TEST DATA**//
-let testArrAuth = [{
-    firstName: "Александр",
-    lastName: "Пушкин",
-    middleName: "Сергеевич",
-    id: 1
-},
-    {
-        firstName: "Лев",
-        lastName: "Толстой",
-        middleName: "Николаевич",
-        id: 2
-    }];

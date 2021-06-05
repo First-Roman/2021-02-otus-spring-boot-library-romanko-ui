@@ -18,7 +18,7 @@ export const BrowserBookContainer = connect(state => {
             getAllBook().then(books => {
                 dispatch(actionSetBooks(books));
             }).catch(e => {
-                dispatch(actionSetBooks(testArrBook));
+
             });
 
         }, removeHandler(id) {
@@ -32,18 +32,3 @@ export const BrowserBookContainer = connect(state => {
             dispatch(actionCreateNewBook());
         }
     }))(BookBrowser);
-
-
-//**TEST DATA**//
-let testArrBook = [{
-    title: "BOOK !",
-    author: "AUTHOR",
-    genre: "GENRE",
-    id: 1
-},
-    {
-        title: "BOOK !",
-        author: "AUTHOR",
-        genre: "GENRE",
-        id: 2
-    }];
