@@ -43,6 +43,10 @@ module.exports = {
             '/login':{target: 'http://localhost:8080',
                 secure: false,
                 changeOrigin: false
+            },
+            '/logout':{target: 'http://localhost:8080',
+                secure: false,
+                changeOrigin: false
             }
         }
     },
