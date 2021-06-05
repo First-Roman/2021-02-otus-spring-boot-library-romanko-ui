@@ -3,6 +3,9 @@ export async function reqGet(url, headers) {
         method: 'GET',
         headers: headers
     });
+    if (response.redirected) {
+        window.location.href = response.url;
+    }
     if (response.ok) {
         return response.json();
     } else {
@@ -17,6 +20,9 @@ export async function reqPost(url, body, headers) {
             headers: headers,
             body: JSON.stringify(body)
         });
+    if (response.redirected) {
+        window.location.href = response.url;
+    }
     if (response.ok) {
         return response.json();
     } else {
@@ -30,6 +36,9 @@ export async function reqDel(url, headers) {
             method: 'DELETE',
             headers
         });
+    if (response.redirected) {
+        window.location.href = response.url;
+    }
     if (response.ok) {
         return response.json();
     } else {
@@ -43,6 +52,9 @@ export async function reqPutForm(url, formData) {
             method: 'PUT',
             body: formData
         });
+    if (response.redirected) {
+        window.location.href = response.url;
+    }
     if (response.ok) {
         return response.json();
     } else {
@@ -56,6 +68,9 @@ export async function reqPostForm(url, formData) {
             method: 'POST',
             body: formData
         });
+    if (response.redirected) {
+        window.location.href = response.url;
+    }
     if (response.ok) {
         return response.json();
     } else {
