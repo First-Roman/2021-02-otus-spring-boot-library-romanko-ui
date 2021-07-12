@@ -24,8 +24,10 @@ export async function reqPost(url, body, headers) {
         window.location.href = response.url;
     }
     if (response.ok) {
+
         return response.json();
     } else {
+
         throw ErrorEvent;
     }
 }
